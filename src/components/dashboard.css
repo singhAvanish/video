@@ -1,0 +1,161 @@
+.dashboard{
+    display:flex;
+    flex-direction:row;
+    
+
+}
+.main{
+   
+    width:150vh;
+    padding:1.5vh 3vh 0 3vh;
+    background-color:#f5f4f0;
+    display:flex;
+    flex-direction:column;
+    
+}
+.head{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    
+}
+.head1{
+    width:30vh;
+    display:flex;
+   justify-content:space-between
+}
+.head1 span{
+    padding:1vh 0vh
+}
+.head1-btn button{
+    display:flex;
+    flex-direction:row;
+    border-radius:1vh;
+    height:5vh;
+    width:27vh;
+    border:none;
+    background-color:white;
+    gap:1vh;
+
+    padding:1.5vh 2vh 1vh 2vh;
+    
+
+}
+.head1-btn input{
+    outline:none;
+    box-shadow: none;
+    border: none;
+    
+}
+
+  
+
+.head2{
+    width:50vh;
+    display:flex;
+    gap:3vh
+    
+}
+.head2 button{
+   width:40vh;
+    border:none;
+    border-radius:1vh;
+    
+}
+.head2-btn1{
+    background-color:#f5b29f;
+    display:flex;
+    gap:1vh;
+    padding:1.5vh 0 0 4vh
+}
+.head2-btn2{
+    background-color:#e6e0df;
+    display:flex;
+    gap:1vh;
+    padding:1.5vh 0 0 5vh
+   
+}
+.head2 span{
+    margin-top:1vh
+}
+.features{
+    margin-top:6vh;
+    margin-bottom:5vh
+}
+.features p span:first-child{
+    
+    font-weight:bold;
+}
+.features p{
+    font-size:2rem
+}
+.list-feature{
+    display:flex;
+    flex-direction:row;
+    gap:3vh
+}
+.button{
+    list-style: none;
+    height:8vh;
+    width:25vh;
+    background-color:white;
+    border-radius:1vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:1vh
+
+
+}
+.button div{
+    border-radius:1vh;
+    background-color:pink;
+    width:20%;
+    height:50%;
+    text-align:center;
+    padding-top:1vh
+}
+
+
+.vid-list iframe {
+   width:100%;
+   height:20vh;
+    pointer-events: none;
+    border-radius:1vh
+  }
+
+ .vid-ulist{
+    display:flex;
+    flex-wrap: wrap; 
+    height:auto;
+    padding-top:5vh;
+    overflow:hidden;
+  gap: 3vh;
+ }
+ .vid-ulist li{
+   width:40vh;
+   height:30vh;
+   list-style:none;
+   
+   
+
+
+ } 
+ .vid-ulist p{
+    margin:0;
+    padding:0;
+    
+ }
+ .project-head{
+    display:flex;
+    justify-content:space-between
+ }
+
+ .list-feature Link{
+    text-decoration:none;
+    
+ }
+  
+  

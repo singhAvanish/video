@@ -1,0 +1,78 @@
+.navbar{
+    padding-top:5vh;
+    text-align:center;
+    background-color:white;
+    height:100%;
+    width:40vh;
+
+    
+}
+.btn-main{
+    display:flex;
+    flex-direction:column;
+    gap:2vh;
+    align-items: flex-start;
+    margin-left:2vh
+
+
+}
+
+.logo{
+    width:10vh;
+
+    font-size:2rem;
+    font-weight:bolder;
+    margin-left:1.7vh;
+   padding-bottom:1.5vh
+
+
+}
+.btn{
+    height:7vh;
+    width:25vh;
+   
+    color:black;
+    padding-right:2vh;
+    border-radius:1vh;
+    display:flex;
+    gap:1vh;
+    padding-left:1.5vh;
+    align-items:center
+    
+
+}
+.btn1{
+    height:5vh;
+    width:25vh;
+   background-color:#6095eb;
+    color:white;
+    padding-right:2vh;
+    border-radius:1vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:1vh;
+   padding:1vh 2vh 1vh 1vh
+
+}
+.navbar .btn:hover {
+    background-color: #edf0f5;
+  }
+  
+
+
+.profile{
+    display:flex;
+    flex-direction:row;
+    padding-bottom:1vh
+    
+}
+.profile img{
+    
+    height:5vh;
+    width:5vh;
+    background-color:blue;
+    margin-top:2vh;
+    margin-left:2vh;
+    margin-right:1vh;
+}

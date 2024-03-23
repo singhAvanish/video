@@ -1,0 +1,36 @@
+.video-timeline {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background-color: #ddd;
+}
+
+.video-timeline video {
+  width: 100%;
+  height: 20vh;
+}
+
+.trim-start,
+.trim-end {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: red;
+}
+
+.trim-start {
+  left: 0;
+}
+
+.trim-end {
+  right: 0;
+}
+
+.video-timeline img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vh;
+  height: 2vh;
+}
