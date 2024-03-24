@@ -85,6 +85,9 @@
     margin-top:1vh
 }
 .features{
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column;
     margin-top:6vh;
     margin-bottom:5vh
 }
@@ -94,6 +97,7 @@
 }
 .features p{
     font-size:2rem;
+    padding-left:5vh;
     
 }
 .list-feature{
@@ -112,9 +116,14 @@
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    cursor:pointer;
     gap:1vh
 
 
+}
+.button:hover{
+    background-color:#f2f2f2;
+    
 }
 .button div{
     border-radius:1vh;
@@ -145,6 +154,12 @@
    width:40vh;
    height:30vh;
    list-style:none;
+   display:flex;
+   flex-direction:column;
+   justify-content:flex-start;
+   align-items:start;
+   font-size:0.9rem;
+   
    
    
 
