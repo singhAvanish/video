@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 .navbar{
     padding-top:5vh;
     text-align:center;
-    background-color:white;
-    height:100%;
+    background-color:#465A65;
+    height:200vh;
     width:40vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1rem;
+    font-weight:400;
 
     
 }
@@ -44,8 +48,8 @@
 .btn1{
     height:5vh;
     width:25vh;
-   background-color:#6095eb;
-    color:white;
+   background-color:#cccccc;
+    color:black;
     padding-right:2vh;
     border-radius:1vh;
     display:flex;

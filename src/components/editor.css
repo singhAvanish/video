@@ -34,7 +34,8 @@ input[type="file"] {
   text-align: center;
   width: 50vh;
   height: 50vh;
-  border: 1px solid #5DADE2;
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,10 +80,12 @@ input[type="file"] {
   font-weight: 400;
   font-style: medium;
   font-weight:bold;
+  color:#cccccc;
     
     width: 100%;
     height: 100%;
-    background-color:#f5f4f0;
+    /* background-color:#f5f4f0; */
+    background-color: #36454F;
   }
   
   .edit1 {
@@ -94,8 +97,8 @@ input[type="file"] {
   }
   
   input[type="number"] {
-    border: 1px solid #5DADE2;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   }
   
 
@@ -108,7 +111,9 @@ input[type="file"] {
     display: flex;
     flex-direction: column;
     gap:10vh;
-    border:1px solid  #5DADE2;
+    
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
     width:80vh;
     height:50vh;
     align-items:center;
@@ -125,7 +130,9 @@ input[type="file"] {
   }
 
   .sub2-2{
-    border:2px solid #5DADE2;
+    
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
     width:75%;
     height:100%;
     overflow:scroll;
@@ -141,7 +148,8 @@ input[type="file"] {
   .player{
     width:100%;
     height:10vh;
-    border:1px solid #5DADE2;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -150,7 +158,8 @@ input[type="file"] {
 .tool-1{
   width:100vw;
   height:6vh;
-  border:1px solid #5DADE2;
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   display:flex;
   gap:2vh;
   font-size:2rem;
@@ -162,7 +171,8 @@ input[type="file"] {
   gap:1vh;
   width:80vh;
   height:50vh;
-  border:1px solid #5DADE2;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   align-items:center;
   
  
@@ -215,7 +225,8 @@ input[type="file"] {
 
 }
 .rotation{
-  border-top:2px solid #5DADE2;
+  border-top: 2px solid rgba(255, 255, 255, 0.5); 
+  
   width:100%;
   height:100%;
   padding:2vh 6vh 0 10vh;
@@ -229,7 +240,7 @@ input[type="file"] {
   gap:2vh;
 }
 .position{
-  border-top:2px solid #5DADE2 ;
+  border-top: 2px solid rgba(255, 255, 255, 0.5); 
   padding:1vh 0 0 0;
   display:flex;
   width:100%;
