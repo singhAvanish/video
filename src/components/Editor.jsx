@@ -23,6 +23,19 @@ const Editor = () => {
   const [video, setVideo] = useState([]);
   const [zoom, setZoom] = useState(1);
   const [videoDuration, setVideoDuration] = useState(0);
+  const [opacity, setOpacity] = useState(1);
+  const [rotationX, setRotationX] = useState(0);
+const [rotationY, setRotationY] = useState(0);
+const [rotationZ, setRotationZ] = useState(0);
+const [x, setX] = useState(0);
+const [y, setY] = useState(0);
+const [z, setZ] = useState(0);
+
+// ...
+
+<div style={{ transform: `translate3d(${x}px, ${y}px, ${z}px)` }}>
+  Your content here
+</div>
 
   const videoRef = useRef(null);
 
@@ -126,7 +139,10 @@ const Editor = () => {
                 
                   ref={videoRef}
                   src={URL.createObjectURL(file)}
-                  style={{ transform: `scale(${zoom})` }}
+                  style={{ 
+    transform: `scale(${zoom}) rotateX(${rotationX}deg) rotateY(${rotationY}deg) rotateZ(${rotationZ}deg) translate3d(${x}px, ${y}px, ${z}px)`, 
+    opacity: `${opacity}`
+}}
                   onLoadedMetadata={(e) => setVideoDuration(e.target.duration)}
                 />
                
@@ -150,19 +166,19 @@ const Editor = () => {
               <div className="scale s">
                 <span>Scale</span>
                 <span>
-                  <input type="range"></input>
+                  <input type="range" min="0" max="10" step="0.1" value={zoom} onChange={(e)=>setZoom(e.target.value)}></input>
                 </span>
                 <span>
-                  <input className="num" type="number"></input>
+                  <input className="num" value={zoom} onChange={(e)=>setZoom(e.target.value)} type="number"></input>
                 </span>
               </div>
               <div className="opacity s">
                 <span>Opacity</span>
                 <span>
-                  <input type="range"></input>
+                  <input type="range" min="0" max="1" step="0.1" value={opacity} onChange={(e)=>(parseFloat(e.target.value))}></input>
                 </span>
                 <span>
-                  <input className="num" type="number"></input>
+                  <input className="num" value={opacity} onChange={(e)=>setOpacity(e.target.value)} type="number"></input>
                 </span>
               </div>
               <div className="rotation s">
@@ -174,7 +190,7 @@ const Editor = () => {
                       <FontAwesomeIcon icon={faRotateRight} />Z
                     </span>
                     <span>
-                      <input className="num" type="number"></input>
+                      <input className="num" value={rotationZ} onChange={(e)=>setRotationZ(e.target.value)} type="number" ></input>
                     </span>
                   </div>
 
@@ -182,13 +198,13 @@ const Editor = () => {
                     <span>
                       <FontAwesomeIcon icon={faRotateRight} />Y
                     </span>
-                    <input className="num" type="number"></input>
+                    <input className="num" value={rotationY} onChange={(e)=>setRotationY(e.target.value)} type="number"></input>
                   </div>
                   <div className="rot x">
                     <span>
                       <FontAwesomeIcon icon={faRotateRight} />X
                     </span>
-                    <input className="num" type="number"></input>
+                    <input className="num" value={rotationX} onChange={(e)=>setRotationX(e.target.value)} type="number"></input>
                   </div>
                 </div>
               </div>
@@ -201,17 +217,17 @@ const Editor = () => {
                 <div>
                   <span>X</span>
                   <span>
-                    <input className="num" type="number"></input>
+                    <input className="num" value={x} onChange={(e)=>setX(e.target.value)} type="number"></input>
                   </span>
                 </div>
 
                 <div>
                   <span>Y</span>
-                  <input className="num" type="number"></input>
+                  <input className="num" value={y} onChange={(e)=>setY(e.target.value)} type="number"></input>
                 </div>
                 <div>
                   <span>Z</span>
-                  <input className="num" type="number"></input>
+                  <input className="num" value={z} onChange={(e)=>setZ(e.target.value)} type="number"></input>
                 </div>
               </div>
             </div>
